@@ -1,0 +1,102 @@
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">The ASA</span> Blog
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <%=link_to "Create New Article ", new_article_path ,controller: "articles" %>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Welcome</h1>
+                        <p class="intro-text"> <%= link_to articles_path, controller: 'articles', class: "btn btn-primary" do %>
+                        		 See the list of articles
+						<% end %>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            
+                <h2>About ASA</h2>
+                <p>The African Student's Association was founded in 1974. It was originally named the blah blah blah until in 2005, the leaders of the organization decided to rename it the blah blah blah. </p>
+                
+           
+        </div>
+
+        
+    </section>
+    <section>
+        <div id="contact" style="height: 500px;  background-color: black;" >
+        <div class="jumbotron" style="background-color: black; color: white; padding-left: 10%;">
+             <h1 class="display-3" style="background-color: black; color: white;">Can't get enough?</h1>
+                <h2>Contact Us:</h2>
+                <p> Email: asa@columbia.edu </p>
+                <p> Meetings: 9-11PM in the Malcolm X Lounge, Hartley Hall, Columbia University </p>
+                <p>Turn ups: TBD</p>
+        </div>
+    </div>
+    </section>
+    <!-- Map Section -->
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center" >
+            <p>Copyright &copy; African Student's Association 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
